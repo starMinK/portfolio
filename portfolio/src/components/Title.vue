@@ -78,7 +78,7 @@ export default {
         </h2>
       </div>
       <div class="title_image-container">
-        <img src="@/assets/titleChismasThree.png" alt="Skewed Image" class="skewed-image"/>
+        <img src="../assets/titleChismasTree.png" alt="Skewed Image" class="skewed-image"/>
       </div>
     </div>
   </div>
