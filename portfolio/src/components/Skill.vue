@@ -3,8 +3,8 @@
 </script>
 
 <template>
-  <div class="archiving_wrap">
-    <div class="title_contents">
+  <div class="skill_wrap">
+    <div class="skill_contents">
       <div class="skills">
         <h2>Skills</h2>
         <div class="skills-bar">
@@ -18,7 +18,7 @@
 </template>
 
 <style>
-.archiving_wrap {
+.skill_wrap {
   background-color: #6E1511;
   height: 55rem;
 }

@@ -4,7 +4,7 @@
 
 <template>
   <div class="sec2_contents_wrap">
-    <div class="title_contents">
+    <div class="archiving_contents">
       <div class="about">
         <h2>About Me</h2>
         <p>Here is where you can introduce yourself.</p>

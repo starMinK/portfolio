@@ -4,7 +4,7 @@
 
 <template>
   <div class="sec4_contents_wrap">
-    <div class="title_contents">
+    <div class="archiving_contents">
       <div class="projects">
         <h2>Projects</h2>
         <div class="project">

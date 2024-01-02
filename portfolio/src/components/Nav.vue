@@ -29,7 +29,7 @@ export default {
 <template>
   <div class="nav_contents" :class="{top : isTop}">
       <div class="nav_wrap">
-        <h2 class="nav_title" @click="scrollToSection('title')">GMK's Portfolio</h2>
+        <h2 class="nav_title" @click="scrollToSection('title')">Gyumin's Portfolio</h2>
 
         <ul class="nav">
           <li @click="scrollToSection('aboutMe')">About me</li>
@@ -59,13 +59,14 @@ export default {
   color: black;
 
   /*네비게이션 배경 색상 에니메이션 속도*/
-  transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 
   /*네비게이션 바 상단 고정*/
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 100;
 }
 
 /*네비게이션 최상단일때 색상*/
@@ -78,7 +79,7 @@ export default {
 .nav_wrap {
   /*크기 설정*/
   max-width: 71.25rem;
-  height: 50px;
+  height: 60px;
 
   /*네이게이션 메뉴 정렬*/
   display: flex;

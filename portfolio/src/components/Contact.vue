@@ -4,7 +4,7 @@
 
 <template>
   <div class="sec5_contents_wrap">
-    <div class="title_contents">
+    <div class="archiving_contents">
       <div class="contact">
         <h2>Contact</h2>
         <form class="contact-form">
