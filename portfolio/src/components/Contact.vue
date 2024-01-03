@@ -3,8 +3,8 @@
 </script>
 
 <template>
-  <div class="sec5_contents_wrap">
-    <div class="archiving_contents">
+  <div class="contact_contents_wrap">
+    <div class="contact_contents">
       <div class="contact">
         <h2>Contact</h2>
         <form class="contact-form">
@@ -19,9 +19,9 @@
 </template>
 
 <style>
-.sec5_contents_wrap {
+.contact_contents_wrap {
   background-color: #E5888A;
-  height: 100vh;
+  height: 95vh;
 }
 
 .contact-form input,

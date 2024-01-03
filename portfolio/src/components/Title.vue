@@ -65,7 +65,7 @@ export default {
 
 <template>
   <div class="title_wrap">
-    <div class="archiving_contents">
+    <div class="title_contents">
       <h1 class="title_subject" v-html="typedText"></h1>
       <div class="title_content">
 <!--        <span>to Nexon.</span>-->
@@ -108,7 +108,7 @@ export default {
 
   /*위치 및 크기 설정*/
   margin: 50px auto 0 auto;
-  height: 100vh;
+  height: 95vh;
 }
 
 .title_subject {
@@ -121,7 +121,7 @@ export default {
   color: #171717;
 }
 
-.archiving_contents {
+.title_contents {
   text-align: center;
   width: 80rem;
   padding-top: 10rem;
@@ -153,7 +153,7 @@ export default {
 
 .title_image-container {
   position: absolute;
-  top: 40%;
+  top: 35%;
   left: -20%;
   z-index: 0;
 }

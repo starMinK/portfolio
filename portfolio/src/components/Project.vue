@@ -3,8 +3,8 @@
 </script>
 
 <template>
-  <div class="sec4_contents_wrap">
-    <div class="archiving_contents">
+  <div class="projects_contents_wrap">
+    <div class="projects_contents">
       <div class="projects">
         <h2>Projects</h2>
         <div class="project">
@@ -17,9 +17,9 @@
 </template>
 
 <style>
-.sec4_contents_wrap {
+.projects_contents_wrap {
   background-color: #029664;
-  height: 100vh;
+  height: 95vh;
 }
 
 .project {
