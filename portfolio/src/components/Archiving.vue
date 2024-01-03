@@ -23,6 +23,6 @@
 .archiving_wrap {
   font-family: 'EASTARJET-Medium', sans-serif;
   background-color: #222222;
-  height: 55rem;
+  height: 100vh;
 }
 </style>

@@ -19,7 +19,7 @@
 <style>
 .sec4_contents_wrap {
   background-color: #029664;
-  height: 55rem;
+  height: 100vh;
 }
 
 .project {

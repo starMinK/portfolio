@@ -108,7 +108,7 @@ export default {
 
   /*위치 및 크기 설정*/
   margin: 50px auto 0 auto;
-  height: 55rem;
+  height: 100vh;
 }
 
 .title_subject {

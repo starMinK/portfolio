@@ -21,7 +21,7 @@
 <style>
 .sec5_contents_wrap {
   background-color: #E5888A;
-  height: 55rem;
+  height: 100vh;
 }
 
 .contact-form input,

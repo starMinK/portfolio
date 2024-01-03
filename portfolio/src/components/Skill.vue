@@ -20,7 +20,7 @@
 <style>
 .skill_wrap {
   background-color: #6E1511;
-  height: 55rem;
+  height: 100vh;
 }
 
 .skills-bar {
