@@ -88,7 +88,7 @@
   position: relative;
   padding-bottom: 5px;
 
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .skill_title .line {
@@ -161,6 +161,8 @@
   justify-content: center;
   margin: 0 0 4rem 0;
   width: 100%;
+
+  position: relative;
 }
 
 .skills-bar_warp {
@@ -169,7 +171,8 @@
   height: 2rem;
   width: 100%;
 
-  position: relative;
+  position: absolute;
+  left: 100px;
 }
 
 .skills_bar {

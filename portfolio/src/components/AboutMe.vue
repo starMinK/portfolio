@@ -1,5 +1,9 @@
 <script>
-
+export default {
+  props : {
+    scrollAbout: Boolean,
+  },
+}
 </script>
 
 <template>
@@ -9,72 +13,77 @@
       <h1 class="aboutMe_title">ABOUT ME</h1>
     </div>
     <div class="aboutMe_contents">
-      <div class="aboutMe_contents_inner">
-        <div class="about">
-          <div class="item">
-            <img class="item_img" src="@/assets/nameIcon.png">
-            <div class="item_content">
-              <h1>이름</h1>
-              <h2>김규민</h2>
+      <Transition name="slide">
+        <div class="aboutMe_contents_inner" v-if="scrollAbout">
+          <div class="about">
+            <div class="item">
+              <img class="item_img" src="@/assets/nameIcon.png">
+              <div class="item_content">
+                <h1>이름</h1>
+                <div class="item_content_tag">
+                  <h2>김규민</h2>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="about">
-          <div class="item">
-            <img class="item_img" src="@/assets/phoneNum.png">
-            <div class="item_content">
-              <h1>연락처</h1>
-              <h2>010-5525-3306</h2>
-            </div>
-          </div>
-        </div>
+          <div class="about">
+            <div class="item">
+              <img class="item_img" src="@/assets/phoneNum.png">
+              <div class="item_content">
+                <h1>연락처</h1>
 
-        <div class="about">
-          <div class="item">
-            <img class="item_img" src="@/assets/birth.png">
-            <div class="item_content">
-              <h1>생년월일</h1>
-              <h2>04.03.29</h2>
+                <div class="item_content_tag">
+                  <h2>010-5525-3306</h2>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="about">
-          <div class="item">
-            <img class="item_img" src="@/assets/email.png">
-            <div class="item_content">
-              <h1>이메일</h1>
-              <h2>rbals040329@gmail.com</h2>
+          <div class="about">
+            <div class="item">
+              <img class="item_img" src="@/assets/birth.png">
+              <div class="item_content">
+                <h1>생년월일</h1>
+                <Transition name="fade-slide">
+                  <div class="item_content_tag">
+                    <h2>04.03.29</h2>
+                  </div>
+                </Transition>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="about">
-          <div class="item">
-            <img class="item_img" src="@/assets/address.png">
-            <div class="item_content">
-              <h1>주소지</h1>
-              <h2>서울특별시 구로구</h2>
+          <div class="about">
+            <div class="item">
+              <img class="item_img" src="@/assets/email.png">
+              <div class="item_content">
+                <h1>이메일</h1>
+                <div class="item_content_tag">
+                  <h2>rbals040329@gmail.com</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about">
+            <div class="item">
+              <img class="item_img" src="@/assets/address.png">
+              <div class="item_content">
+                <h1>주소지</h1>
+                <div class="item_content_tag">
+                  <h2> 구로구 서울특별시</h2>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="aboutMe_image-container">
-        <img src="@/assets/aboutCookie.png">
-      </div>
+      </Transition>
     </div>
   </div>
 </template>
 
 <style>
-@font-face {
-  font-family: 'EASTARJET-Medium';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/EASTARJET-Medium.woff2') format('woff2');
-  font-weight: 500;
-  font-style: normal;
-}
-
 @font-face {
   font-family: 'seolleimcool-SemiBold';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/seolleimcool-SemiBold.woff2') format('woff2');
@@ -174,16 +183,28 @@
   color: #737373;
 }
 
-.aboutMe_image-container {
-  position: absolute;
-  top: 60%;
-  left: -10%;
-  z-index: 0;
-}
-
 .aboutMe_image-container > img {
   width: 237px;
   height: 240px;
   object-fit: contain;
 }
+
+.item_content_tag {
+  color: #737373;
+}
+
+.slide-enter-from {
+  opacity: 0;
+  transform: translateY(-150px);
+}
+
+.slide-enter-active {
+  transition: all 1s;
+}
+
+.slide-enter-to {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 </style>

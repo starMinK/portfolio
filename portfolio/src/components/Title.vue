@@ -68,7 +68,6 @@ export default {
     <div class="title_contents">
       <h1 class="title_subject" v-html="typedText"></h1>
       <div class="title_content">
-<!--        <span>to Nexon.</span>-->
         <h2>
           초등학교 5학년 때부터 C, C++, Unity를 공부하며 게임 개발에 빠져들었고<br/>
           중학생 때는 JAVA와 네트워크 배워 마인크래프트 서버를 운영하고 플러그인을 개발했습니다.<br/>
@@ -76,9 +75,6 @@ export default {
           현재는 풀스택 개발자로서 개발을 하고 있습니다.<br/>
           저는 과거도 지금도 앞으로도 꾸준히 도전적이고 성장하는 개발자입니다.
         </h2>
-      </div>
-      <div class="title_image-container">
-        <img src="../assets/titleChismasTree.png" alt="Skewed Image" class="skewed-image"/>
       </div>
     </div>
   </div>
@@ -108,7 +104,7 @@ export default {
 
   /*위치 및 크기 설정*/
   margin: 50px auto 0 auto;
-  height: 95vh;
+  height: 70vh;
 }
 
 .title_subject {
@@ -145,22 +141,7 @@ export default {
   position: relative;
   z-index: 1;
 
-  margin-top: 10rem;
-
   line-height: 3rem;
   color: antiquewhite;
-}
-
-.title_image-container {
-  position: absolute;
-  top: 35%;
-  left: -20%;
-  z-index: 0;
-}
-
-.title_image-container > img {
-  width: 650px;
-  height: 654px;
-  object-fit: contain;
 }
 </style>
